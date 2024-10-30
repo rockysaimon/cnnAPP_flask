@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body id="theme-body" class="dark-theme">
+    <div id="theme-switcher">
+        <img id="logo" src="{{ url_for('static', filename='assets/mw_logo.png') }}" alt="Logo">
+        <img id="theme-icon" src="{{ url_for('static', filename='assets/media-luna.png') }}" alt="Switch Theme" onclick="switchTheme()">
+    </div>
+    <div id="div-msg">
+        <h1>Analiza archivos sospechosos en busca de malware y amenazas.</h1>
+        <p>Protégete contra las vulnerabilidades y asegura la integridad de tu sistema.</p>
+    </div>
+    <form id="upload-btn" enctype="multipart/form-data">
+        <input type="file" id="file-input" name="file" accept=".exe" style="display:none;">
+        <button type="button" id="select-btn" onclick="selectFile()">Seleccionar y Predecir</button>
+        <p id="file-name"></p>
+    </form>
+    <div id="container">
+        <p id="prediction"></p>
+        <img id="image_path" style="visibility:hidden;">
+    </div>
+    <footer id="footer">
+        <p>Este predictor de malware utiliza un modelo CNN.</p>
+    </footer>
+</body>
+</html>

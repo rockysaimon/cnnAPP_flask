@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+#theme-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 70px;
+    background-color: #666c79a6;
+    border: 5px #0000003d solid;
+}
+
+#logo {
+    margin: 0 auto;
+    height: 210px;
+    width: 210px;
+}
+
+#div-msg {
+    text-align: center;
+}
+
+#container {
+    margin-top: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+#theme-icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 2%;
+}
+
+#div-msg p {
+    margin-bottom: 70px;
+    font-size: xx-large;
+}
+
+.light-theme {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.dark-theme {
+    background-color: #161625;
+    color: rgb(228, 225, 225);
+}
+.dark-theme #theme-switcher {
+    background-color: rgb(35,44,66);
+}
+
+#upload-btn {
+    text-align: center;
+}
+
+
+button {
+    border: none;
+    background-color: #0b4dda;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+button:hover {
+    background-color: #0864c5;
+}
+
+#file-name {
+    font-size: 14px;
+    color: #86aaf9;
+    margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+#footer a {
+    color: #86aaf9;
+    text-decoration: underline;
+}
